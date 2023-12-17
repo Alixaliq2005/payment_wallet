@@ -1,135 +1,107 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
-<body>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="wallet.css">
+<!-- <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"> -->
+<script src="wallet.js"></script>
+
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="">Mr.Wallet</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="main.html">Home</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="wallet.html">Wallet</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="paybill.html">Pay Bills</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="transaction.html">Transactions</a>
+          </li>
+          <li class="nav-item2">
+          <a class="nav-link" href="login.html">Login / Sign Up</a>
+          </li>
+        
+    </div>
+  </div>
+</nav> -->
+
+<div class="box">
+
+  
+  <div class="mdl">
+  <div class="circles">
+    <div class="circle circle-1"></div>
+    <div class="circle circle-2"></div>
+  </div>  
+      <h1 class="title">
+        Please enter your credit card <br>details below
+      </h1>
     
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Your Bank</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">SignUp</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="login.html">LogIn</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="addbank.html">Add Bank</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="wallet.html">Wallet</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="beneficiary.html">Beneficiary</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="paybill.html">Pay Bills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="transaction.html">Transactions</a>
-              </li>
-              
+    <div class="card">
+
+      <form>
+        <div class="logo">
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg width="48px" height="48px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <title>Group</title>
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Group" fill="#FFFFFF">
+                <circle id="Oval" cx="16" cy="16" r="16"></circle>
+                <circle id="Oval" cx="16" cy="48" r="16"></circle>
+                <circle id="Oval" cx="48" cy="16" r="16"></circle>
+                <circle id="Oval" cx="48" cy="48" r="16"></circle>
+              </g>
+            </g>
+          </svg>
+
+          <div class="card-number card-balance">
+            <label>Balance</label>
+            <input id="card-number" placeholder="1000.00" type="text" required maxlength="10">
+            <span class="underline"></span>
+  
           </div>
         </div>
-      </nav>
+        <div class="card-number">
+          <label>Card Number</label>
+          <input id="card-number" placeholder="1234 1234 1234 1234" type="text" pattern="[0-9]*" required maxlength="19">
+          <span class="underline"></span>
 
+        </div>
+        <br>
+        <div class="group">
+          <div class="card-name">
+            <label>Card Holder</label>
+            <input id="card-name" placeholder="Name Surname" type="text" required>
+            <span class="underline"></span>
 
-    <!-- <div id = "operations">
-        <div id = "signUp"><a href="index.html">SignUP</a></div>
-        <div id = "logIn"><a href="login.html">LogIn</a></div>
-        <div id = "Bank"><a href="addbank.html">Add Bank</a></div>
-        <div id = "wallet"><a href="wallet.html">Wallet</a></div>
-        <div id = "beneficiary"><a href="beneficiary.html">Add beneficiary</a></div>
-        <div id = "makePayment"><a href="paybill.html">Pay Bill</a></div>
-        <div id = "transaction"><a href="transaction.html">Transaction</a></div>
-    </div> -->
+          </div>
+          <div class="expiration-date">
+            <label>Exp. Date</label>
+            <input id="card-exp" placeholder="10/25" type="text" maxlength="5" required>
+            <span class="underline"></span>
 
-<div id = "container">
-    
-    <div id = "addinput">
-        <h1 class="headingOne">Create New Account</h1>
-        <input type="text" id = "userName" placeholder = "Enter name">
-        <input type="text" id = "mobileNo" placeholder = "Enter mobile">
-        <input type="text" id = "email" placeholder = "Enter email">
-        <input type="text" id = "password" placeholder = "Enter password">
-        <button onclick = "addAccount()">Add Account</button>
+          </div>
+          <div class="ccv">
+            <label>CCV</label>
+            <input id="card-ccv" placeholder="123" type="text" maxlength="3" required>
+            <span class="underline"></span>
+          </div>
+
+        </div>
+      </form>
     </div>
-    <div id = "operation">
-        <h3>DELETE , PATCH , PUT & GET Methods</h3>
+  </div>
 
-        <div>
-            <input type="text" id = "keyA" placeholder = "Enter ID">
-            <input type="text" id = "amount" placeholder = "Enter Amount">
-            <button onClick="addbalancetoWallet()" id ="post">Add to Balance</button>
-        </div>
-        <div>
-            <input type="text" id = "source" placeholder = "Enter source mobile">
-            <input type="text" id = "toMobile" placeholder = "Enter to mobile">
-            <input type="text" id = "amount" placeholder = "Enter Amount">
-            <button onClick="transferMoney()" id ="put">Transfer Money</button>
-        </div>
-        
-        <div>
-            <input type="text" id = "keyC" placeholder = "Enter ID">
-            <button onClick="getCustomer()" id ="get">Get Customer </button>
-        </div>
-        
-
-        <div>
-            <input type="text" id = "keyD" placeholder = "Enter ID">
-            <input type="text" id = "amount" placeholder = "Enter Amount">
-            <button onClick="depositbalancetoBank()" id ="put">Deposit to Bank </button>
-        </div>
-        
-        <div>
-            <input type="text" id = "keyW" placeholder = "Enter ID">
-            <button onClick="viewWalletBalance()" id ="get">ViewWalletBalance</button>
-        </div>
-        
-    </div>
-      
 </div>
-    
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
-</html>
-
-<script>
-
-   async function getCustomer(){
-        let id = document.getElementById("keyC").value;
-        console.log(id);
-       let response = await fetch(`http://localhost:8888/getbenList/${id}` ,{
-           method: 'GET',
-           headers : {'Content-Type' : 'application/json'},
-       });
-   
-       let dat = await response.json();
-       console.log(dat)
-   }
-   
-   async function viewWalletBalance(){
-        let id = document.getElementById("keyW").value;
-        console.log(id);
-       let response = await fetch(`http://localhost:8888/wallet/${id}` ,{
-           method: 'GET',
-           headers : {'Content-Type' : 'application/json'},
-       });
-   
-       let dat = await response.json();
-       console.log(dat)
-   }
-       
-   </script>
-   

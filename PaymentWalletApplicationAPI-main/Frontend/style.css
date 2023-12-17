@@ -80,6 +80,10 @@ height: 100%;
     background-color: green;
 }
 
+.nav-item2{
+    margin-left: 1000px;
+}
+
 /* #operations{
     display: flex;
     width: 90%;

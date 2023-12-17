@@ -8,7 +8,7 @@
 
   <title>CodePen - Animated Login Form using Html &amp; CSS Only</title> 
 
-  <link rel="stylesheet" href="login.css"> 
+  <link rel="stylesheet" href="signup.css"> 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
 
@@ -16,7 +16,7 @@
 
  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="">Mr.Wallet</a>
+    <a class="navbar-brand" href="login.html">Mr.Wallet</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -40,11 +40,19 @@
 </nav>
 
 <div class="login-box">
-  <h2>Login</h2>
+  <h2>Sign Up</h2>
   <form>
     <div class="user-box">
       <input class="in" type="text" name="" required="">
-      <label class="ll">Mobile Number</label>
+      <label class="ll">UserName</label>
+    </div>
+    <div class="user-box">
+        <input class="in" type="text" name="" required="">
+        <label class="ll">Email Address</label>
+    </div>
+    <div class="user-box">
+        <input class="in" type="text" name="" required="">
+        <label class="ll">Mobile Number</label>
     </div>
     <div class="user-box">
       <input class="in" id="myInput" type="password" name="" required="">
@@ -63,7 +71,7 @@
     </a>
   </form>
   <div class="div-a">
-    <h6>Don't have an account? <a class="a-div" href="signup.html">Sign Up</a> here</h6>
+    <h6>Already have an account? <a class="a-div" href="login.html">Login</a> here</h6>
   </div>
 </div>
 
